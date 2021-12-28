@@ -1,0 +1,9 @@
+[submodule "VkClay"]
+	path = VkClay
+	url = https://github.com/LawG4/VkClay.git
+[submodule "VkTablet"]
+	path = VkTablet
+	url = https://github.com/LawG4/VkTablet.git
+[submodule "Ziggurat"]
+	path = Ziggurat
+	url = https://github.com/LawG4/Ziggurat.git
