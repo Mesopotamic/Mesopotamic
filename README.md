@@ -12,7 +12,7 @@ All of these subprojects come together in order to produce the overall mesopotam
 
 ## Legal Summary
 
-As of time of writing this *(December 2021)* The Log4J vulnerabilities have made big tech's abuse of open source projects abundantly clear. Therefore this project and all subprojects come with a custom license. which can be summarised as such :
+As of time of writing this *(December 2021)* The Log4J vulnerabilities have made big tech's abuse of open source projects abundantly clear. Therefore this project and all subprojects come with a custom license. which can be summarised as such:
 
 > *If you are using Mesopatmic or any of it's submodules for private or educational use, then you are absolutely free to go ahead and use this project in any way you want without credit or license. All over use cases must either be totally open source, or you can pay towards the maintenance of the project.*
 
@@ -20,5 +20,33 @@ As of time of writing this *(December 2021)* The Log4J vulnerabilities have made
 
 ## Build 
 
-All Mesopatamic projects use CMake, I think this makes it easiest to build projects, essentially allowing users to just drop it into their preexisting cmake projects.
+All Mesopatamic projects use CMake, I think this makes it easiest to build projects, essentially allowing users to just drop it into their pre-existing cmake projects.
+
+### Building Examples - Standalone
+
+```bash
+# Clone the repo
+git clone https://github.com/LawG4/Mesopatamic.git
+
+# Update submodules 
+git submodule update --init --recursive
+
+# Create a build directory
+cd Mesopatamic
+mkdir build
+cd build
+
+# Configure the build with examples on
+cmake .. -DMesoExamples=True -DMesoPlatform={PLATFORM}
+
+# {Platform} can be replaced with one of the following strings
+# Windows
+# Linux
+# Android
+# Mac
+# IPhone
+
+# build the project
+cmake --build .
+```
 
