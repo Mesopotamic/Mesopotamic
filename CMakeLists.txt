@@ -6,3 +6,6 @@ add_library(Mesopatamic Source/Main.c)
 
 # Add all of our component parts
 add_subdirectory(VkClay)
+
+# Now start adding all of the examples
+add_subdirectory(Examples/VkClay)
