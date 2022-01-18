@@ -18,4 +18,8 @@ extern VkInstance instance;
 /**
 * @brief Creates the Vulkan instance
 */
+ * @brief Creates the Vulkan instance
+ */
 void createInstance();
+
+void createDebugMessenger();
