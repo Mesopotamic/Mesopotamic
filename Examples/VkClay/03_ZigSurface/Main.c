@@ -13,4 +13,7 @@ int main(int argc, char* argv[])
 
     // Create the Vulkan instance
     createInstance();
+
+    // Create the logical device
+    createDevice();
 }

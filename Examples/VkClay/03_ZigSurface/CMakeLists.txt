@@ -4,7 +4,9 @@ project(VkClay_03_Zig_Surface VERSION 0.1.0 LANGUAGES C)
 add_executable(VkClay_03_Zig_Surface 
 	Main.c
 	VkObjects.h
-	VkInstance.c)
+	VkInstance.c
+	VkDevice.c
+	VkSurface.c)
 
 # Add VkClay as a subproject
 add_subdirectory(../../../VkClay VkClay)
