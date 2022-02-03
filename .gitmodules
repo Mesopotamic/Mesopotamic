@@ -1,9 +1,9 @@
-[submodule "VkClay"]
-	path = VkClay
+[submodule "Framework/VkClay"]
+	path = Framework/VkClay
 	url = https://github.com/LawG4/VkClay.git
-[submodule "VkTablet"]
-	path = VkTablet
+[submodule "Framework/VkTablet"]
+	path = Framework/VkTablet
 	url = https://github.com/LawG4/VkTablet.git
-[submodule "Ziggurat"]
-	path = Ziggurat
+[submodule "Framework/Ziggurat"]
+	path = Framework/Ziggurat
 	url = https://github.com/LawG4/Ziggurat.git
