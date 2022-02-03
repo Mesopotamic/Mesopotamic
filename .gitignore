@@ -1,8 +1,11 @@
 # Ignore build directory
-*/build/*
-build/*
-*-build/*
-*/*-build/*
+build/
+*-build/
+**/build/
+**/*-build/
+
+# Ignore the vs code directory
+.vscode/
 
 # Prerequisites
 *.d
