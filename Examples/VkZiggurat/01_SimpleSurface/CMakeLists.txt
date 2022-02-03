@@ -5,7 +5,7 @@ add_executable(VkZiggurat_01_SimpleSurface
 	Main.c)
 
 # Add VkClay and Ziggurat as subprojects. Ziggurat adds VkClay For us
-add_subdirectory(../../../Ziggurat Ziggurat)
+add_subdirectory(../../../Framework/Ziggurat Ziggurat)
 
 # The Ziggurat CMake subproject defines a CMake function that selects 
 # the windowing defines for us. We can either use this CMake function
