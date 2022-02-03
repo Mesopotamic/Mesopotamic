@@ -7,3 +7,6 @@
 [submodule "Framework/Ziggurat"]
 	path = Framework/Ziggurat
 	url = https://github.com/LawG4/Ziggurat.git
+[submodule "Layer/VK_LAYER_LMG_raytracing_sim"]
+	path = Layer/VK_LAYER_LMG_raytracing_sim
+	url = https://github.com/LawG4/VK_LAYER_LMG_raytracing_sim.git
