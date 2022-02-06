@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 
                 vkGetPhysicalDeviceProperties2KHR(physicalDevices[i], &props);
 
-                printf(" * Physical device %i:\n\t%s", i, props.properties.deviceName);
+                printf(" * Physical device %i:\n\t%s\n", i, props.properties.deviceName);
             }
 
         } else {
