@@ -6,6 +6,8 @@
  */
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "Ziggurat/Ziggurat.h"
 
 // Vulkan Objects
@@ -50,7 +52,7 @@ void createInstance()
     }
 
     // Start by selecting the instance extensions that we want to use
-    char* requestedInstanceExtensionNames[] = {"VK_KHR_surface", zig_GetVulkanSurfaceEXTName()};
+    const char* requestedInstanceExtensionNames[] = {"VK_KHR_surface", zig_GetVulkanSurfaceEXTName()};
     uint32_t requestedIECount = 2;
 
     // Obtain a list of supported instance extensions
@@ -69,7 +71,7 @@ void createInstance()
 
     // Loop through each of the requested instance extension to see if they are found
     for (uint32_t i = 0; i < requestedIECount; i++) {
-        char* extName = requestedInstanceExtensionNames[i];
+        const char* extName = requestedInstanceExtensionNames[i];
 
         // Search through the list of instance extensions for this extension
         bool extFound = false;
