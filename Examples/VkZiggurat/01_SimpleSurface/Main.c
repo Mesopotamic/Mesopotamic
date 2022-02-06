@@ -20,7 +20,10 @@ void createInstance();
 int main(int argc, char* argv[])
 {
     // Open the Vulkan Library and the global function pointers
-    vkc_LoadVulkan();
+    if (vkc_LoadVulkan() != vkc_success) {
+        printf("Failed to open the Vulkan library");
+        exit(-1);
+    }
 
     // Create the Vulkan instance
     createInstance();

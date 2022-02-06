@@ -17,7 +17,10 @@ int main(int argc, char* argv[])
     // vkEnumerateInstanceLayerProperties
     // vkGetInstanceProcAddr
     // vkCreateInstance
-    vkc_LoadVulkan();
+    if (vkc_LoadVulkan() != vkc_success) {
+        printf("Failed to open the Vulkan library");
+        exit(-1);
+    }
 
     // Create very basic instance create info
     VkInstanceCreateInfo instanceInfo;
