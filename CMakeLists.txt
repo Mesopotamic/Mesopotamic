@@ -10,6 +10,9 @@ option(MESO_BUILD_LAYERS "Build experimental Vulkan layers" ON)
 # Allow the examples to be packaged up into nice folders
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+# Set the CMake module path so we can find the modules we're looking for 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake/Modules")
+
 # Add a temporarily library as we have to piece all of the component parts together first!
 add_library(Mesopatamic Source/Main.c)
 
@@ -27,4 +30,5 @@ endif()
 if(${MESO_BUILD_EXAMPLES})
 	add_subdirectory(Examples/VkClay)
 	add_subdirectory(Examples/VkZiggurat)
+	add_subdirectory(Examples/VkTablet)
 endif()
