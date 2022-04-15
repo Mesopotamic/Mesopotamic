@@ -10,3 +10,6 @@
 [submodule "Layer/VK_LAYER_LMG_raytracing_sim"]
 	path = Layer/VK_LAYER_LMG_raytracing_sim
 	url = https://github.com/LawG4/VK_LAYER_LMG_raytracing_sim.git
+[submodule "Windowing/Solomon"]
+	path = Windowing/Solomon
+	url = https://github.com/Mesopotamic/Solomon.git
