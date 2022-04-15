@@ -1,15 +1,12 @@
-[submodule "Framework/VkClay"]
-	path = Framework/VkClay
-	url = https://github.com/LawG4/VkClay.git
-[submodule "Framework/VkTablet"]
-	path = Framework/VkTablet
-	url = https://github.com/LawG4/VkTablet.git
-[submodule "Framework/Ziggurat"]
-	path = Framework/Ziggurat
-	url = https://github.com/LawG4/Ziggurat.git
-[submodule "Layer/VK_LAYER_LMG_raytracing_sim"]
-	path = Layer/VK_LAYER_LMG_raytracing_sim
-	url = https://github.com/LawG4/VK_LAYER_LMG_raytracing_sim.git
 [submodule "Windowing/Solomon"]
 	path = Windowing/Solomon
 	url = https://github.com/Mesopotamic/Solomon.git
+[submodule "Vulkan/Headers/VkRegistryParser"]
+	path = Vulkan/Headers/VkRegistryParser
+	url = https://github.com/Mesopotamic/VkRegistryParser.git
+[submodule "Vulkan/Headers/VkTablet"]
+	path = Vulkan/Headers/VkTablet
+	url = https://github.com/Mesopotamic/VkTablet.git
+[submodule "Vulkan/Headers/VkClay"]
+	path = Vulkan/Headers/VkClay
+	url = https://github.com/Mesopotamic/VkClay.git
