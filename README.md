@@ -1,4 +1,4 @@
-# Mesopotamic
+![](Documentation/Images/Mesopotamic-Slim-Preview.png)
 
 Welcome to the worlds worst game engine (In progress). The idea here is to produce a game engine entirely from the ground up, with multiple different components that users can pick and choose from. Combining all of those subprojects into a fully feature complete engine, with editor and all (eventually).
 
