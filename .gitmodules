@@ -10,3 +10,6 @@
 [submodule "Vulkan/Headers/VkClay"]
 	path = Vulkan/Headers/VkClay
 	url = https://github.com/Mesopotamic/VkClay.git
+[submodule "Helpers/MesoCMake"]
+	path = Helpers/MesoCMake
+	url = https://github.com/Mesopotamic/MesoCMake.git

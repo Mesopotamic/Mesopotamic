@@ -40,5 +40,9 @@ option(MESO_BUILD_STATIC "Build all Mesopotamic libraries as static" ON)
 # still cache the variable
 option(MESO_BUILD_EXAMPLES "Build any Mesopotamic examples" ON)
 
+# Now add the CMake helper functions used in every Mesopotamic project
+list(APPEND CMAKE_MODULE_PATH ${MESO_CMAKE})
+include(Mesopotamic)
+
 # Now start adding all of the Mesopotamic projects into the build tree
 add_subdirectory(${MESO_SOLOMON})
