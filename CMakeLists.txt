@@ -46,3 +46,4 @@ include(Mesopotamic)
 
 # Now start adding all of the Mesopotamic projects into the build tree
 add_subdirectory(${MESO_SOLOMON})
+add_subdirectory(${MESO_XML})

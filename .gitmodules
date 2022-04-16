@@ -13,3 +13,6 @@
 [submodule "Helpers/MesoCMake"]
 	path = Helpers/MesoCMake
 	url = https://github.com/Mesopotamic/MesoCMake.git
+[submodule "Helpers/MesoXML"]
+	path = Helpers/MesoXML
+	url = https://github.com/Mesopotamic/MesoXML.git
