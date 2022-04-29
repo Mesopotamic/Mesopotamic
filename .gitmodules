@@ -11,8 +11,8 @@
 	path = Vulkan/Headers/VkClay
 	url = https://github.com/Mesopotamic/VkClay.git
 [submodule "Helpers/MesoCMake"]
-	path = Helpers/MesoCMake
+	path = Helpers/meso_cmake
 	url = https://github.com/Mesopotamic/MesoCMake.git
 [submodule "Helpers/MesoXML"]
-	path = Helpers/MesoXML
+	path = Helpers/meso_xml
 	url = https://github.com/Mesopotamic/MesoXML.git
