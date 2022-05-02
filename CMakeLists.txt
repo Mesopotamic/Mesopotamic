@@ -18,20 +18,23 @@ add_library(Mesopotamic INTERFACE)
 # path to those modules. This helps us save many repeated clones
 set(MESO_BUILD_ROOT TRUE CACHE BOOL "Mesopotamic is building from root" FORCE)
 set(MESO_ROOT_DIR "${CMAKE_CURRENT_LIST_DIR}" CACHE PATH "" FORCE)
+set(MESO_BUILD_DIR "${CMAKE_BINARY_DIR}" CACHE PATH "" FORCE)
 
-set(MESO_CMAKE 		"${MESO_ROOT_DIR}/Helpers/MesoCMake" 		CACHE PATH "" FORCE)
-set(MESO_XML 		"${MESO_ROOT_DIR}/Helpers/MesoXML" 			CACHE PATH "" FORCE)
+set(MESO_CMAKE 		"${MESO_ROOT_DIR}/Helpers/meso_cmake" 		CACHE PATH "" FORCE)
+set(MESO_XML 		"${MESO_ROOT_DIR}/Helpers/meso_xml"			CACHE PATH "" FORCE)
 set(MESO_VKCLAY 	"${MESO_ROOT_DIR}/Vulkan/Headers/VkClay" 	CACHE PATH "" FORCE)
 set(MESO_VKTABLET 	"${MESO_ROOT_DIR}/Vulkan/Headers/VkTablet" 	CACHE PATH "" FORCE)
 set(MESO_SOLOMON 	"${MESO_ROOT_DIR}/Windowing/Solomon" 		CACHE PATH "" FORCE)
 
-# Decide when to build the examples as static or dynamic. When users are working 
-# on the libraries themselves it's easiest to make the builds static 
-# It's easier because then the libraries don't have to copied across to the 
-# executables working directory
-# 
-# Because Mesopotamic is masively under development right now, we're gonna
-# set that to on by default
+# Decide when to build the examples as static or dynamic. When someone is actively
+# developing a library, it is easiest to do it as static. This is because we need
+# testing executables to run the library code, and it would be a pain to copy over
+# the library every time we make a change while developing. However if you are a 
+# user of Mesopotamic and are using a finished library, you probably want it to be 
+# dynamic for a smaller executable size etc.
+#
+# Most Mesopotamic libraries are still in development, so by defaut this option
+# is on
 option(MESO_BUILD_STATIC "Build all Mesopotamic libraries as static" ON)
 
 # Decide when to build the examples, if the user is calling Mesopotamic from a 
