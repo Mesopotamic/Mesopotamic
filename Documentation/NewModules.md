@@ -13,9 +13,13 @@ Each project has to follow the same rules for the folder layout
 * All other markdown files go in Documentation directory
 * Documentation Images go inside the Documentation/Images directory 
 
+## Code Style
+
+The coding style for Mesopotamic is laid out [here](CodingStyle.md). However these are only particularly strict when working on external parts, like the user readable include headers
+
 ## Main Header
 
-If you are producing a module that has a main header, look at Solomon.h for an example, then there are certain rules that have to be followed as well. All functions must have a java docs style commenting 
+If you are producing a module that has a main header, look at solomon.h for an example, then there are certain rules that have to be followed as well. All functions must have a java docs style commenting 
 
 ```c
 /**
@@ -27,10 +31,10 @@ If you are producing a module that has a main header, look at Solomon.h for an e
  * @param title The heading given to the window title
  * @returns Opaque handle to the pointer containing the window data
  */
-SolomonWindow SolomonWindowCreate(int x, int y, int w, int h, char* title);
+SolomonWindow solomon_window_create(int x, int y, int w, int h, char* title);
 ```
 
-At the top of the main header, you should have introduction to the module. That is the name of the module, description, license, copyright, authors. This is then wrapped in ***'s Once again look at Solomon.h for an example.
+At the top of the main header, you should have introduction to the module. That is the name of the module, description, license, copyright, authors. This is then wrapped in ***'s Once again look at solomon.h for an example.
 
 ### Header Guards 
 
@@ -41,21 +45,8 @@ Header guards are delimited with double underscores, and it goes `__projectname_
 #define __SOLOMON_EXTERNAL_HEADER_H__ (1)
 ```
 
-## Function & Enum Names
+## Meso Prefix
 
-So how do we name functions? We start with the name of the project, if it's an Enum we then add an Enum after the project name. 
+The only projects that should specifically have a "meso" prefix to their module name are those that go in the helper functions. Why do we do this? because the helper functions don't obviously belong to a specific project. 
 
-After that functions are then named with the scope getting more specific, so for example for creating a Solomon Window we go: Solomon -> Window -> Create
-
-```c
-// Great!
-SolomonWindowCreate();
-
-// Nope
-SolomonCreateWindow();
-
-// Nope
-CreateSolomonWindow();
-```
-
- 
+If you're using something like Clay or Ziggurat, then they are such a huge part of the control flow that users should know where they come form. Also more significant projects should try to have a creative name attached to them. Where as helper functions just need to be straight to the point.  
