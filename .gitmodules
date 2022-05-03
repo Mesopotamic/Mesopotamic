@@ -1,5 +1,5 @@
-[submodule "Windowing/Solomon"]
-	path = Windowing/Solomon
+[submodule "Windowing/solomon"]
+	path = Windowing/solomon
 	url = https://github.com/Mesopotamic/Solomon.git
 [submodule "Vulkan/Headers/VkRegistryParser"]
 	path = Vulkan/Headers/VkRegistryParser
