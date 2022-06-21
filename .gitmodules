@@ -1,18 +1,9 @@
-[submodule "Windowing/solomon"]
-	path = Windowing/solomon
-	url = https://github.com/Mesopotamic/Solomon.git
-[submodule "Vulkan/Headers/VkRegistryParser"]
-	path = Vulkan/Headers/VkRegistryParser
-	url = https://github.com/Mesopotamic/VkRegistryParser.git
-[submodule "Vulkan/Headers/VkTablet"]
-	path = Vulkan/Headers/VkTablet
-	url = https://github.com/Mesopotamic/VkTablet.git
-[submodule "Vulkan/Headers/VkClay"]
-	path = Vulkan/Headers/VkClay
-	url = https://github.com/Mesopotamic/VkClay.git
 [submodule "Helpers/MesoCMake"]
 	path = Helpers/meso_cmake
 	url = https://github.com/Mesopotamic/MesoCMake.git
 [submodule "Helpers/MesoXML"]
 	path = Helpers/meso_xml
 	url = https://github.com/Mesopotamic/MesoXML.git
+[submodule "Graphics"]
+	path = Graphics
+	url = https://github.com/Mesopotamic/Lapis.git
